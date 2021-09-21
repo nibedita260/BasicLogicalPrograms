@@ -7,7 +7,7 @@ namespace BasicLogicalPrograms
         static void Main(string[] args)
         {
             int N;
-            Console.WriteLine("Choose 1.FlipCoin 2.LeapYear 3.PowerOfTwo 4.HarmonicNumber 5.PrimeFactor");
+            Console.WriteLine("Choose 1.FlipCoin 2.CheckleapYear 3.PowerOfTwo 4.HarmonicNumber 5.PrimeFactors 6.QuotientandRemainder 7.SwapOfTwoNumbers 8:CheckEvenOrOdd 9.CheckVowelOrConsonat");
             N = Convert.ToInt32(Console.ReadLine());
             switch (N)
             {
@@ -42,6 +42,10 @@ namespace BasicLogicalPrograms
                 case 8:
                     CheckEvenOrOdd checkEvenOrOdd = new CheckEvenOrOdd();
                     checkEvenOrOdd.CheckEvenOrOddNum();
+                    break;
+                case 9:
+                    CheckVowelOrConsonant checkVowelOrConsonant = new CheckVowelOrConsonant();
+                    checkVowelOrConsonant.IsVowelOrConsonant();
                     break;
                 default:
                     Console.WriteLine("Choose valid option");
