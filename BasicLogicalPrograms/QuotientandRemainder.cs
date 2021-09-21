@@ -6,10 +6,10 @@ namespace BasicLogicalPrograms
 {
     class QuotientandRemainder
     {
-        public float  CompQuotientandRemainder(float n1,float n2)
+        public float  CompQuotientandRemainder(float dividend, float divisor)
         {
-            float Quotient = n1 / n2;
-            float Reminder = n1 % n2;
+            float Quotient = dividend / divisor;
+            float Reminder = dividend % divisor;
             Console.WriteLine("Quotient and Remainder:" + Quotient + " " + Reminder);
             return Quotient;
         }

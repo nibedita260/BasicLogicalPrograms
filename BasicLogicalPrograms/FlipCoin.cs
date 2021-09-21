@@ -9,33 +9,30 @@ namespace BasicLogicalPrograms
         public void CoinToss()
         {
             int N;
-            double head = 0, tail = 0;
-            float perHead=0, perTail=0;
+            int head = 0, tail = 0;
             Console.WriteLine("Enter a positive number till you want to flip the coin");
             N = Convert.ToInt32(Console.ReadLine());
             Random random = new Random();
-            double coin = random.NextDouble();
+            double coinValue = random.NextDouble();
             Console.WriteLine("the number you entered is:" + N);
-            while (N > 0)
+            for(int flip=0;flip<N;flip++)
             {
-                if (coin < 0.5)
+                if (coinValue < 0.5)
                 {
                     Console.WriteLine("Tails");
                     tail++;
-                    //percentage
-                    perHead = (float) (head *100)/N;
                 }
                 else
                 {
                     Console.WriteLine("Heads");
                     head++;
-                    //percentage
-                    perTail = (float) (tail*100)/N;
                 }
-                N--;
             }
             Console.WriteLine("Number of times head you got is:" + head);
             Console.WriteLine("Number of times tail you got is:" + tail);
+            //percentage
+            double perHead = (double)head / N * 100;
+            double perTail = (double)tail / N * 100;
             Console.WriteLine("Percentage of Head vs Tails:" + perHead + "%" + perTail+"%");
         }
     }
