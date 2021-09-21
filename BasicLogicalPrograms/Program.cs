@@ -7,7 +7,7 @@ namespace BasicLogicalPrograms
         static void Main(string[] args)
         {
             int N;
-            Console.WriteLine("Choose 1.FlipCoin 2.LeapYear 3.PowerOfTwo 4.HarmonicNumber");
+            Console.WriteLine("Choose 1.FlipCoin 2.LeapYear 3.PowerOfTwo 4.HarmonicNumber 5.PrimeFactor");
             N = Convert.ToInt32(Console.ReadLine());
             switch (N)
             {
@@ -26,6 +26,10 @@ namespace BasicLogicalPrograms
                 case 4:
                     HarmonicNumber harmonicNumber = new HarmonicNumber();
                     harmonicNumber.PrintHarmonicNum();
+                    break;
+                case 5:
+                    PrimeFactor primeFactor = new PrimeFactor();
+                    primeFactor.PrintPrimeFactors();
                     break;
                 default:
                     Console.WriteLine("Choose valid option");
