@@ -39,6 +39,10 @@ namespace BasicLogicalPrograms
                     SwapOfTwoNumbers swapOfTwoNumbers = new SwapOfTwoNumbers();
                     swapOfTwoNumbers.SwapOfNum(3, 4);
                     break;
+                case 8:
+                    CheckEvenOrOdd checkEvenOrOdd = new CheckEvenOrOdd();
+                    checkEvenOrOdd.CheckEvenOrOddNum();
+                    break;
                 default:
                     Console.WriteLine("Choose valid option");
                     break;
