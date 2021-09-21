@@ -7,7 +7,7 @@ namespace BasicLogicalPrograms
         static void Main(string[] args)
         {
             int N;
-            Console.WriteLine("Choose 1.FlipCoin 2.LeapYear 3.PowerOfTwo");
+            Console.WriteLine("Choose 1.FlipCoin 2.LeapYear 3.PowerOfTwo 4.HarmonicNumber");
             N = Convert.ToInt32(Console.ReadLine());
             switch (N)
             {
@@ -22,6 +22,10 @@ namespace BasicLogicalPrograms
                 case 3:
                     PowerOfTwo powerOfTwo = new PowerOfTwo();
                     powerOfTwo.PowerOfTwoTable();
+                    break;
+                case 4:
+                    HarmonicNumber harmonicNumber = new HarmonicNumber();
+                    harmonicNumber.PrintHarmonicNum();
                     break;
                 default:
                     Console.WriteLine("Choose valid option");
