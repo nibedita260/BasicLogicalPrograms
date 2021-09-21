@@ -7,7 +7,7 @@ namespace BasicLogicalPrograms
         static void Main(string[] args)
         {
             int N;
-            Console.WriteLine("Choose 1.FlipCoin 2.LeapYear");
+            Console.WriteLine("Choose 1.FlipCoin 2.LeapYear 3.PowerOfTwo");
             N = Convert.ToInt32(Console.ReadLine());
             switch (N)
             {
@@ -18,6 +18,10 @@ namespace BasicLogicalPrograms
                 case 2:
                     CheckLeapYear checkLeapYear = new CheckLeapYear();
                     checkLeapYear.CheckLeapYr();
+                    break;
+                case 3:
+                    PowerOfTwo powerOfTwo = new PowerOfTwo();
+                    powerOfTwo.PowerOfTwoTable();
                     break;
                 default:
                     Console.WriteLine("Choose valid option");
