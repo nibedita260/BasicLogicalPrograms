@@ -7,7 +7,7 @@ namespace BasicLogicalPrograms
         static void Main(string[] args)
         {
             int N;
-            Console.WriteLine("Choose 1.FlipCoin 2.LeapYear 3.PowerOfTwo 4.HarmonicNumber 5.PrimeFactor");
+            Console.WriteLine("Choose 1.FlipCoin 2.LeapYear 3.PowerOfTwo 4.HarmonicNumber 5.PrimeFactor 6.QuotientandRemainder 7.SwapOfTwoNumbers 8:CheckEvenOrOdd");
             N = Convert.ToInt32(Console.ReadLine());
             switch (N)
             {
