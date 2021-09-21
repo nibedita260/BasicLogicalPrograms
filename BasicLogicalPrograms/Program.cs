@@ -31,6 +31,10 @@ namespace BasicLogicalPrograms
                     PrimeFactor primeFactor = new PrimeFactor();
                     primeFactor.PrintPrimeFactors();
                     break;
+                case 6:
+                    QuotientandRemainder quotientandRemainder = new QuotientandRemainder();
+                    quotientandRemainder.CompQuotientandRemainder(40, 5);
+                    break;
                 default:
                     Console.WriteLine("Choose valid option");
                     break;
