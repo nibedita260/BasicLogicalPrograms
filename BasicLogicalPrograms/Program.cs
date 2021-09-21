@@ -7,7 +7,7 @@ namespace BasicLogicalPrograms
         static void Main(string[] args)
         {
             int N;
-            Console.WriteLine("Choose 1.FlipCoin 2.CheckleapYear 3.PowerOfTwo 4.HarmonicNumber 5.PrimeFactors 6.QuotientandRemainder 7.SwapOfTwoNumbers 8:CheckEvenOrOdd 9.CheckVowelOrConsonat");
+            Console.WriteLine("Choose 1.FlipCoin 2.CheckleapYear 3.PowerOfTwo 4.HarmonicNumber 5.PrimeFactors 6.QuotientandRemainder 7.SwapOfTwoNumbers 8:CheckEvenOrOdd 9.CheckVowelOrConsonat 10.LargestAmongThreeNumbers");
             N = Convert.ToInt32(Console.ReadLine());
             switch (N)
             {
@@ -46,6 +46,10 @@ namespace BasicLogicalPrograms
                 case 9:
                     CheckVowelOrConsonant checkVowelOrConsonant = new CheckVowelOrConsonant();
                     checkVowelOrConsonant.IsVowelOrConsonant();
+                    break;
+                case 10:
+                    LargestAmongThreeNumbers largestAmongThreeNumbers = new LargestAmongThreeNumbers();
+                    largestAmongThreeNumbers.LargestNumber(3, 4, 5);
                     break;
                 default:
                     Console.WriteLine("Choose valid option");
