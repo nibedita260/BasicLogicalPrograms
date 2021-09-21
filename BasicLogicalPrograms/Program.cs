@@ -7,7 +7,7 @@ namespace BasicLogicalPrograms
         static void Main(string[] args)
         {
             int N;
-            Console.WriteLine("Choose 1.FlipCoin 2.LeapYear 3.PowerOfTwo 4.HarmonicNumber 5.PrimeFactors");
+            Console.WriteLine("Choose 1.FlipCoin 6.QuotientandRemainder 7.SwapOfTwoNumbers 8:CheckEvenOrOdd 9.CheckVowelOrConsonat 10.LargestAmongThreeNumbers");
             N = Convert.ToInt32(Console.ReadLine());
             switch (N)
             {
@@ -15,21 +15,25 @@ namespace BasicLogicalPrograms
                     FlipCoin flipCoin = new FlipCoin();
                     flipCoin.CoinToss();
                     break;
-                case 2:
-                    CheckLeapYear checkLeapYear = new CheckLeapYear();
-                    checkLeapYear.CheckLeapYr();
+                case 6:
+                    QuotientandRemainder quotientandRemainder = new QuotientandRemainder();
+                    quotientandRemainder.CompQuotientandRemainder(40, 5);
                     break;
-                case 3:
-                    PowerOfTwo powerOfTwo = new PowerOfTwo();
-                    powerOfTwo.PowerOfTwoTable();
+                case 7:
+                    SwapOfTwoNumbers swapOfTwoNumbers = new SwapOfTwoNumbers();
+                    swapOfTwoNumbers.SwapOfNum(3, 4);
                     break;
-                case 4:
-                    HarmonicNumber harmonicNumber = new HarmonicNumber();
-                    harmonicNumber.PrintHarmonicNum();
+                case 8:
+                    CheckEvenOrOdd checkEvenOrOdd = new CheckEvenOrOdd();
+                    checkEvenOrOdd.CheckEvenOrOddNum();
                     break;
-                case 5:
-                    PrimeFactor primeFactor = new PrimeFactor();
-                    primeFactor.PrintPrimeFactors();
+                case 9:
+                    CheckVowelOrConsonant checkVowelOrConsonant = new CheckVowelOrConsonant();
+                    checkVowelOrConsonant.IsVowelOrConsonant();
+                    break;
+                case 10:
+                    LargestAmongThreeNumbers largestAmongThreeNumbers = new LargestAmongThreeNumbers();
+                    largestAmongThreeNumbers.LargestNumber(3, 4, 5);
                     break;
                 default:
                     Console.WriteLine("Choose valid option");

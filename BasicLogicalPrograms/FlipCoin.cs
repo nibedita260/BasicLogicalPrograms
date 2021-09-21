@@ -10,7 +10,7 @@ namespace BasicLogicalPrograms
         {
             int N;
             double head = 0, tail = 0;
-            double perHead=0, perTail=0;
+            float perHead=0, perTail=0;
             Console.WriteLine("Enter a positive number till you want to flip the coin");
             N = Convert.ToInt32(Console.ReadLine());
             Random random = new Random();
@@ -23,14 +23,14 @@ namespace BasicLogicalPrograms
                     Console.WriteLine("Tails");
                     tail++;
                     //percentage
-                    perHead = (head * 100)/100;
+                    perHead = (float) (head *100)/N;
                 }
                 else
                 {
                     Console.WriteLine("Heads");
                     head++;
                     //percentage
-                    perTail = (tail * 100)/100;
+                    perTail = (float) (tail*100)/N;
                 }
                 N--;
             }
