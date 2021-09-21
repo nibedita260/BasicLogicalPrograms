@@ -35,6 +35,10 @@ namespace BasicLogicalPrograms
                     QuotientandRemainder quotientandRemainder = new QuotientandRemainder();
                     quotientandRemainder.CompQuotientandRemainder(40, 5);
                     break;
+                case 7:
+                    SwapOfTwoNumbers swapOfTwoNumbers = new SwapOfTwoNumbers();
+                    swapOfTwoNumbers.SwapOfNum(3, 4);
+                    break;
                 default:
                     Console.WriteLine("Choose valid option");
                     break;
