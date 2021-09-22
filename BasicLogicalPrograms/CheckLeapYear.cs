@@ -8,18 +8,18 @@ namespace BasicLogicalPrograms
     {
         public void CheckLeapYr()
         {
-            int N;
+            int n;
             Console.WriteLine("Enter a four digit positive number");
-            N = Convert.ToInt32(Console.ReadLine());
-            if(N >= 1000 && N <= 9999)
+            n = Convert.ToInt32(Console.ReadLine());
+            if (n >= 1000 && n <= 9999)
             {
-                if ((N % 4 == 0 && N % 100 != 0) || (N % 400 == 0))
+                if ((n % 4 == 0 && n % 100 != 0) || (n % 400 == 0))
                 {
-                    Console.WriteLine("given number " + N + " is a leap year");
+                    Console.WriteLine("given number " + n + " is a leap year");
                 }
                 else
                 {
-                    Console.WriteLine("given number " + N + " is not leap year");
+                    Console.WriteLine("given number " + n + " is not leap year");
                 }
             }
             else
