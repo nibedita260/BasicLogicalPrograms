@@ -8,16 +8,16 @@ namespace BasicLogicalPrograms
     {
         public void CheckEvenOrOddNum()
         {
-            int N;
+            int n;
             Console.WriteLine("Enter a number to check whether it is even or odd");
-            N = Convert.ToInt32(Console.ReadLine());
-            if (N % 2 == 0)
+            n = Convert.ToInt32(Console.ReadLine());
+            if (n % 2 == 0)
             {
-                Console.WriteLine(N + " is Even");
+                Console.WriteLine(n + " is Even");
             }
             else
             {
-                Console.WriteLine(N + " is Odd");
+                Console.WriteLine(n + " is Odd");
             }
         }
     }

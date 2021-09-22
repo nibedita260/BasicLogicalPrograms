@@ -6,11 +6,11 @@ namespace BasicLogicalPrograms
 {
     class LargestAmongThreeNumbers
     {
-        public int LargestNumber(int a, int b,int c)
+        public int LargestNumber(int a, int b, int c)
         {
-            int largest=0;
+            int largest = 0;
             Console.WriteLine("The numbers you entered are:" + a + "," + b + "," + c);
-            if(a>b && a > c)
+            if (a > b && a > c)
             {
                 largest = a;
             }
@@ -22,7 +22,7 @@ namespace BasicLogicalPrograms
             {
                 largest = c;
             }
-            Console.WriteLine("The largest number among ["+a+","+b+","+c+"] is :"+largest);
+            Console.WriteLine("The largest number among [" + a + "," + b + "," + c + "] is :" + largest);
             return a;
         }
     }
