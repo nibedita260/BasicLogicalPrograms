@@ -8,15 +8,16 @@ namespace BasicLogicalPrograms
     {
         public void PrintHarmonicNum()
         {
-            int N;
+            int n;
             float harmonic = 1;
             Console.WriteLine("Enter number to print Nth Harmonic number");
-            N = Convert.ToInt32(Console.ReadLine());
-            for(int i=2;i<=N;i++)
+            n = Convert.ToInt32(Console.ReadLine());
+            for(int i=1;i<=n;i++)
             {
-                harmonic += (float)1 / i;
+                Console.Write("1/{0} + ", i);
+                harmonic += 1 / (float)i;
             }
-            Console.WriteLine("The Nth Harmonic number:" + harmonic);
+            Console.Write("\nSum of Series upto {0} terms : {1} \n", n, harmonic);
         }
     }
 }

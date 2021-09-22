@@ -8,15 +8,15 @@ namespace BasicLogicalPrograms
     {
         public void CoinToss()
         {
-            int N;
-            int head = 0, tail = 0;
+            int n;
+            double head = 0, tail = 0;
             Console.WriteLine("Enter a positive number till you want to flip the coin");
-            N = Convert.ToInt32(Console.ReadLine());
+            n = Convert.ToInt32(Console.ReadLine());
             Random random = new Random();
-            double coinValue = random.NextDouble();
-            Console.WriteLine("the number you entered is:" + N);
-            for(int flip=0;flip<N;flip++)
+            Console.WriteLine("the number you entered is:" + n);
+            for(int flip=0;flip<n;flip++)
             {
+                double coinValue = random.NextDouble();
                 if (coinValue < 0.5)
                 {
                     Console.WriteLine("Tails");
@@ -28,12 +28,12 @@ namespace BasicLogicalPrograms
                     head++;
                 }
             }
-            Console.WriteLine("Number of times head you got is:" + head);
-            Console.WriteLine("Number of times tail you got is:" + tail);
+            Console.WriteLine("number of times head you got is:" + head);
+            Console.WriteLine("number of times tail you got is:" + tail);
             //percentage
-            double perHead = (double)head / N * 100;
-            double perTail = (double)tail / N * 100;
-            Console.WriteLine("Percentage of Head vs Tails:" + perHead + "%" + perTail+"%");
+            double perHead = (head / n) * 100;
+            double perTail = (tail / n) * 100;
+            Console.WriteLine("Percentage of Head vs Tails:" + perHead + " % "+"  "+ perTail+ " % ");
         }
     }
 }
